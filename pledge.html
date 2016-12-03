@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap/bootstrap-flex.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <ul class="topnav" id="indexTopnav">
+        <div class="navbar container">
+        <li>
+            <p>Help a Friend</p>
+        </li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="facts.html">The Facts</a></li>
+        <li class="active"><a href="pledge.html">Take the Pledge</a></li>
+        <li><a href="survey.html">Public Opinion</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li class="icon"> <a href="javascript:void(0);" onclick="dropdownTopnav()">&#9776;</a> </li>
+            </div>
+    </ul>
+    <div class="container">
+        <div class="row flex-items-xs-middle flex-items-xs-center" style="height: 300px;">
+            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+                <h3 class="blue-text">I pledge to...</h3>
+                <ul class="list-unstyled" style="font-size: 14pt">
+                    <li><b>Create</b> a safe place where people can express their feelings</li>
+                    <li><b>Identify</b> people in need of help</li>
+                    <li><b>Inform</b> a qualified person about an at-risk individual if needed</li>
+                    <li><b>Be</b> a light in this dark world</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc016TYnyKOMg-fozjI1yIjEqU2iXfi2pEigViHzx89UgGOdw/viewform?embedded=true" width="100%" height="800px" frameborder="0" marginheight="0" marginwidth="0" style="border-radius: 10px; border: 2px solid slateblue">Loading...</iframe>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs"> <b>Authors</b>
+                    <ul class="list-unstyled">
+                        <li>Dane Rieber</li>
+                        <li>Grant Nygaard</li>
+                        <li>Chase Matthews</li>
+                    </ul>
+                </div>
+                <div class="col-xs"> <b>Site Map</b>
+                    <ul class="list-unstyled">
+                        <li><a class="gray-text" href="index.html"><i class="material-icons" style="font-size: 10px">launch</i> About</a></li>
+                        <li><a class="gray-text" href="facts.html"><i class="material-icons" style="font-size: 10px">launch</i> The Facts</a></li>
+                        <li><a class="gray-text" href="pledge.html"><i class="material-icons" style="font-size: 10px">launch</i> Take the Pledge</a></li>
+                        <li><a class="gray-text" href="survey.html"><i class="material-icons" style="font-size: 10px">launch</i> Public Opinion</a></li>
+                        <li><a class="gray-text" href="faq.html"><i class="material-icons" style="font-size: 10px">launch</i> FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function dropdownTopnav() {
+            var tn = document.getElementById("indexTopnav");
+            if (tn.className === "topnav") {
+                tn.className += " responsive";
+            }
+            else {
+                tn.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

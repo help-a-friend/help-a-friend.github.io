@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap/bootstrap-flex.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <ul class="topnav" id="indexTopnav">
+        <div class="navbar container">
+        <li>
+            <p>Help a Friend</p>
+        </li>
+        <li class="active"><a href="index.html">About</a></li>
+        <li><a href="facts.html">The Facts</a></li>
+        <li><a href="pledge.html">Take the Pledge</a></li>
+        <li><a href="survey.html">Public Opinion</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li class="icon"> <a href="javascript:void(0);" onclick="dropdownTopnav()">&#9776;</a> </li>
+            </div>
+    </ul>
+    <div class="container-fluid tunnel-background white-text">
+        <div class="container">
+            <div class="row flex-items-xs-middle" style="height: 300px">
+                <div class="col-xs">
+                    <h1><b>Be a light</b> in this dark world</h1>
+                    <p><b>Many teens all around the world are faced with suicidal thoughts and depression. This can't go ignored any longer. People need to see the signs and help out others in need.</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 20px;">
+        <div class="row">
+            <div class="col-xs">
+                <h3>Our Cause</h3>
+                <p>Our goal is to spread awareness to teen suicide and to help people recognize the signs of depression in others around them. There are also a few steps that you can take right now to help prevent teen suicide and to help you become aware to how depression affects people.</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm small-margins">
+                <a class="no-decoration black-text" href="facts.html">
+                    <div class="card no-margins hover-gray-bg">
+                        <p><i class="material-icons large-icon blue-text">info_outline</i></p>
+                        <div class="card-block" style="padding: 10px">
+                            <h4 class="card-title ">Know the Facts</h4>
+                            <p class="card-text">Read about the effects of depression on a person and how to help someone who may be at risk for suicide</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm small-margins">
+                <a class="no-decoration black-text" href="pledge.html">
+                    <div class="card no-margins hover-gray-bg">
+                        <p><i class="material-icons large-icon blue-text">done</i></p>
+                        <div class="card-block" style="padding: 10px">
+                            <h4 class="card-title">Take the Pledge</h4>
+                            <p class="card-text">Help others in your lives by taking the pledge to be aware of depression and offer help</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm small-margins">
+                <a class="no-decoration black-text" href="survey.html">
+                    <div class="card no-margins hover-gray-bg">
+                        <p><i class="material-icons large-icon blue-text">perm_identity</i></p>
+                        <div class="card-block" style="padding: 10px">
+                            <h4 class="card-title">See the Opinion</h4>
+                            <p class="card-text">Look at what others say about the cause of suicide and how it has impacted their lives and take the survey yourself</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+            <div class="col-xs">
+                <b>Authors</b>
+                <ul class="list-unstyled">
+                    <li>Dane Rieber</li>
+                    <li>Grant Nygaard</li>
+                    <li>Chase Matthews</li>
+                </ul>
+            </div>
+            <div class="col-xs">
+                    <b>Site Map</b>
+                <ul class="list-unstyled">
+                    <li><a class="gray-text" href="index.html"><i class="material-icons" style="font-size: 10px">launch</i> About</a></li>
+                    <li><a class="gray-text" href="facts.html"><i class="material-icons" style="font-size: 10px">launch</i> The Facts</a></li>
+                    <li><a class="gray-text" href="pledge.html"><i class="material-icons" style="font-size: 10px">launch</i> Take the Pledge</a></li>
+                    <li><a class="gray-text" href="survey.html"><i class="material-icons" style="font-size: 10px">launch</i> Public Opinion</a></li>
+                    <li><a class="gray-text" href="faq.html"><i class="material-icons" style="font-size: 10px">launch</i> FAQs</a></li>
+                </ul>
+            </div>
+                </div>
+        </div>
+    </footer>
+    <script>
+        function dropdownTopnav() {
+            var tn = document.getElementById("indexTopnav");
+            if (tn.className === "topnav") {
+                tn.className += " responsive";
+            }
+            else {
+                tn.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

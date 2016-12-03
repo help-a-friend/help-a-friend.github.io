@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="gradient-bg">
+
+<head>
+    <link rel="stylesheet" href="bootstrap/bootstrap-flex.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body class="gradient-bg">
+    <ul class="topnav" id="indexTopnav" style="border-bottom: none; background: none">
+        <div class="navbar container">
+        <li>
+            <p>Help a Friend</p>
+        </li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="facts.html">The Facts</a></li>
+        <li><a href="pledge.html">Take the Pledge</a></li>
+        <li class="active"><a href="survey.html">Public Opinion</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li class="icon"> <a href="javascript:void(0);" onclick="dropdownTopnav()">&#9776;</a> </li>
+            </div>
+    </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+        <div class="row flex-items-xs-middle" style="height: 200px"><div class="col-xs-12"><h2 class="text-center white-text">Here is what people have said about teen suicide</h2></div></div>
+        <div class="blue-text white-bg" style="border: 2px solid slateblue; border-radius: 10px; padding: 20px;">
+            <h4>Do you believe that mental health is a common issue pertaining to suicide?</h4>
+            <div class="row flex-items-xs-center"><div id="piechart1" style="width: 300px"></div></div>
+            <h4>Do you feel like there is a safe place or someone you feel comfortable talking to about your feelings?</h4>
+            <div class="row flex-items-xs-center"><div id="piechart2" style="width: 300px"></div></div>
+            <h4>How do you feel about depression and suicide?</h4>
+            <ul class="list-group black-text" style="margin: 20px">
+                <li class="list-group-item">I feel like it is a very serious issue that needs to be addressed. I think that a lot more people have suicidal thoughts than you would think, they just don't want to talk about it.</li>
+                <li class="list-group-item">I feel as though depression is very common among young adults, and I feel like they are at risk. The worst outcome of depression is, in fact, suicide.</li>
+                <li class="list-group-item">I feel like suicide is a bad thing that needs to be stopped immediately.</li>
+                <li class="list-group-item">Suicide isn't that common, but depression can lead to suicide.</li>
+                <li class="list-group-item">I think depression is a common among teens, and there needs to be a solution quick.</li>
+                <li class="list-group-item">Suicide isn't a problem as long as there is a place to talk about it.</li>
+            </ul>
+        </div>
+            </div>
+            </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+            <div class="col-xs">
+                <b>Authors</b>
+                <ul class="list-unstyled">
+                    <li>Dane Rieber</li>
+                    <li>Grant Nygaard</li>
+                    <li>Chase Matthews</li>
+                </ul>
+            </div>
+            <div class="col-xs">
+                    <b>Site Map</b>
+                <ul class="list-unstyled">
+                    <li><a class="gray-text" href="index.html"><i class="material-icons" style="font-size: 10px">launch</i> About</a></li>
+                    <li><a class="gray-text" href="facts.html"><i class="material-icons" style="font-size: 10px">launch</i> The Facts</a></li>
+                    <li><a class="gray-text" href="pledge.html"><i class="material-icons" style="font-size: 10px">launch</i> Take the Pledge</a></li>
+                    <li><a class="gray-text" href="survey.html"><i class="material-icons" style="font-size: 10px">launch</i> Public Opinion</a></li>
+                    <li><a class="gray-text" href="faq.html"><i class="material-icons" style="font-size: 10px">launch</i> FAQs</a></li>
+                </ul>
+            </div>
+                </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data1 = google.visualization.arrayToDataTable([
+          ['Answer', 'Amount'],
+          ['Yes',      8],
+          ['No',     2],
+          ['Other',     0]
+        ]);
+
+        var options1 = {
+            colors:['slateblue', 'darkslateblue', '#8470ff']
+        };
+
+        var chart1 = new google.visualization.PieChart(document.getElementById('piechart1'));
+
+        chart1.draw(data1, options1);
+          
+          var data2 = google.visualization.arrayToDataTable([
+          ['Answer', 'Amount'],
+          ['Yes',      8],
+          ['No',     2],
+          ['Other',     0]
+        ]);
+
+        var options2 = {
+            colors:['slateblue', 'darkslateblue', '#8470ff']
+        };
+
+        var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+        chart2.draw(data2, options2);
+      }
+    </script>
+    <script>
+        function dropdownTopnav() {
+            var tn = document.getElementById("indexTopnav");
+            if (tn.className === "topnav") {
+                tn.className += " responsive";
+            }
+            else {
+                tn.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

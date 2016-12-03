@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap/bootstrap-flex.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <ul class="topnav" id="indexTopnav">
+        <div class="navbar container">
+        <li>
+            <p>Help a Friend</p>
+        </li>
+        <li><a href="index.html">About</a></li>
+        <li class="active"><a href="facts.html">The Facts</a></li>
+        <li><a href="pledge.html">Take the Pledge</a></li>
+        <li><a href="survey.html">Public Opinion</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li class="icon"> <a href="javascript:void(0);" onclick="dropdownTopnav()">&#9776;</a> </li>
+            </div>
+    </ul>
+    <div class="container">
+        <div class="row flex-items-xs-middle flex-items-xs-center" style="height: 300px;">
+        <div class="col-md-6"><div id="piechart" style="width:107%; margin-top: 20px;"></div></div>
+        <div class="col-md-6">
+            <h4 style="margin: 20px;">Suicide is the <span class="blue-text"><b>third leading cause of death</b></span> among people ages 15-24</h4>
+        </div>
+            </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md white-text" style="background: slateblue; border: 1px solid white">
+                <h3 class="text-center" style="margin: 15px;">Know the Signs</h3>
+                <ul>
+                    <li>Change in eating and sleeping habits</li>
+                    <li>Withdrawal from friends, family, and regular activities</li>
+                    <li>Violent actions, rebellious behavior, or running away</li>
+                    <li>Drug and alcohol use</li>
+                    <li>Unusual neglect of personal appearance</li>
+                    <li>Marked personality change</li>
+                    <li>Persistent boredom, difficulty concentrating, or a decline in the quality of schoolwork</li>
+                    <li>Frequent complaints about physical symptoms, often related to emotions, such as stomachaches, headaches, fatigue, etc.</li>
+                    <li>Loss of interest in pleasurable activites</li>
+                    <li>Not tolerating praise or awards</li>
+                </ul>
+            </div>
+            <div class="col-md white-text" style="background: darkslateblue; border: 1px solid white">
+                <h3 class="text-center" style="margin: 15px;">How to Help</h3>
+                <ul>
+                    <li>Ask the person if they re doing ok, feeling depressed, or thinking about suicide</li>
+                    <li>Don't be afraid to mention suicide, it won't put any ideas in their head that aren't already there</li>
+                    <li>Show them that someone is there for them and cares about them</li>
+                    <li>Go to a professional who can help them with their problems or diagnose them with depression</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h4 class="text-center" style="margin: 20px;">More About Teen Suicide</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Teen suicide is a major problem facing our youth. The third leading cause of death for people ages 15-24 is suicide, and in 2003, 8 percent of teenagers attempted suicide. That is one million teenagers who tried to kill themselves because they felt hopeless for life or the future. Teens feel a variety of emotions while growing up, such as stress, confusion, self-doubt, pressure to succeed, financial uncertainty, or other fears. These feelings can become overwhelming and drive individuals to think that suicide is a solution to end all of these feelings. This mindset causes the individual to become detached from their friends and family, or even become reckless in lifestyle. Eventually, they could consider suicide and attempt it. Suicidal thoughts can also be caused by depression, family struggles, questioning sexuality, or other hardships that teenagers may face in their time growing to become an adult.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We want to reach out to a variety of teenagers and young adults who are in the darkness of depression through our social media campaign, which shall be started through our informal website teaching the population about suicide and what to do about it. We are meeting our requirements by (obviously) creating a social media campaign and creating an informal PSA for our audience. We hope that through our actions, hundreds of lives can be saved. We will measure our success through feedback from the community, and we’ll believe we have achieved our goal if at least ONE life is spared.</p>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+            <div class="col-xs">
+                <b>Authors</b>
+                <ul class="list-unstyled">
+                    <li>Dane Rieber</li>
+                    <li>Grant Nygaard</li>
+                    <li>Chase Matthews</li>
+                </ul>
+            </div>
+            <div class="col-xs">
+                    <b>Site Map</b>
+                <ul class="list-unstyled">
+                    <li><a class="gray-text" href="index.html"><i class="material-icons" style="font-size: 10px">launch</i> About</a></li>
+                    <li><a class="gray-text" href="facts.html"><i class="material-icons" style="font-size: 10px">launch</i> The Facts</a></li>
+                    <li><a class="gray-text" href="pledge.html"><i class="material-icons" style="font-size: 10px">launch</i> Take the Pledge</a></li>
+                    <li><a class="gray-text" href="survey.html"><i class="material-icons" style="font-size: 10px">launch</i> Public Opinion</a></li>
+                    <li><a class="gray-text" href="faq.html"><i class="material-icons" style="font-size: 10px">launch</i> FAQs</a></li>
+                </ul>
+            </div>
+                </div>
+        </div>
+    </footer>
+    <script>
+        function dropdownTopnav() {
+            var tn = document.getElementById("indexTopnav");
+            if (tn.className === "topnav") {
+                tn.className += " responsive";
+            }
+            else {
+                tn.className = "topnav";
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Type', 'Percent'],
+          ['Living People',      92],
+          ['Suicide Attempts',     6.64],
+          ['Suicide Deaths',     1.36]
+        ]);
+
+        var options = {
+          title: 'Number of Suicides in the U.S. (2003)',
+            colors:['#8470ff', 'slateblue', 'darkslateblue']
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</body>
+
+</html>

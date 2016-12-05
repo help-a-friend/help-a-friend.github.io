@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap/bootstrap-flex.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+<body>
+    <ul class="topnav" id="indexTopnav">
+        <div class="navbar container">
+        <li>
+            <p>Help a Friend</p>
+        </li>
+        <li class="active"><a href="index.html">About</a></li>
+        <li><a href="facts.html">The Facts</a></li>
+        <li><a href="pledge.html">Take the Pledge</a></li>
+        <li><a href="survey.html">Public Opinion</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li class="icon"> <a href="javascript:void(0);" onclick="dropdownTopnav()">&#9776;</a> </li>
+            </div>
+    </ul>
+    <div class="container">
+        <h3 class="text-center" style="margin-top: 20px; margin-bottom: 20px; color: darkslateblue">Frequently Asked Questions</h3>
+    </div>
+    <div class="container faq">
+        <p><span class="blue-text">What are the signs of someone who wishes to commit suicide?</span> They could express intent to kill themselves directly or even mention suicide. Look out for changes in behavior or personality, or drug/acohol abuse. Go to our <a href="facts.html">facts page</a> to learn more.</p>
+        <p><span class="blue-text">How should I help someone who I think is suicidal?</span> Ask the person if they are ok, feeling depressed, or thinking about suicide. Try to show them that you are there for them and that you care about them. If you think it is neccessary, consult a professional who can diagnose mental illness or help the victim.</p>
+        <p><span class="blue-text">Is someone more likely to commit suicide if they are being bullied?</span> Yes they are. Teens are more likely to commit suicide of they are a victim or even a witness of bullying.</p>
+        <p><span class="blue-text">What can I do every day to help prevent my friends or family from committing suicide?</span> Always ask them how they are feeling and let them talk about their problems. Be a person that they can talk to and ask for help. Be a light for them and pull them out of their dark world.</p>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+            <div class="col-xs">
+                <b>Authors</b>
+                <ul class="list-unstyled">
+                    <li>Dane Rieber</li>
+                    <li>Grant Nygaard</li>
+                    <li>Chase Matthews</li>
+                </ul>
+            </div>
+            <div class="col-xs">
+                    <b>Site Map</b>
+                <ul class="list-unstyled">
+                    <li><a class="gray-text" href="index.html"><i class="material-icons" style="font-size: 10px">launch</i> About</a></li>
+                    <li><a class="gray-text" href="facts.html"><i class="material-icons" style="font-size: 10px">launch</i> The Facts</a></li>
+                    <li><a class="gray-text" href="pledge.html"><i class="material-icons" style="font-size: 10px">launch</i> Take the Pledge</a></li>
+                    <li><a class="gray-text" href="survey.html"><i class="material-icons" style="font-size: 10px">launch</i> Public Opinion</a></li>
+                    <li><a class="gray-text" href="faq.html"><i class="material-icons" style="font-size: 10px">launch</i> FAQs</a></li>
+                </ul>
+            </div>
+                </div>
+        </div>
+    </footer>
+    <script>
+        function dropdownTopnav() {
+            var tn = document.getElementById("indexTopnav");
+            if (tn.className === "topnav") {
+                tn.className += " responsive";
+            }
+            else {
+                tn.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

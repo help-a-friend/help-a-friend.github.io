@@ -167,3 +167,11 @@ body.gradient-bg {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.faq p {
+    font-size: 16pt;
+}
+
+.faq span {
+    font-weight: bold;
+}
